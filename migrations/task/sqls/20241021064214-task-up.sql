@@ -363,6 +363,3 @@ from "COURSE_BOOKING"
 where TO_CHAR(booking_at::date, 'yyyy/mm') = '2024/11' 
 and status <> '課程已取消';
 
-
-
-
