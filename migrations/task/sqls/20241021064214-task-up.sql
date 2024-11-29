@@ -41,13 +41,13 @@ delete from "USER" where email = 'opacity0@hexschooltest.io' ;
 -- 1-4 查詢：取得USER 資料表目前所有用戶數量（提示：使用count函式）
 
 SELECT COUNT(*) AS 筆數
-FROM "USER"
+FROM "USER";
 
 -- 1-5 查詢：取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）
 
 SELECT id, "name", email, "role", created_at, updated_at
 FROM "USER"
-limit 3
+limit 3;
 
 
 --  ████████  █████   █    ████  
@@ -223,7 +223,7 @@ values
 update "COURSE_BOOKING" set 
 cancelled_at = '2024-11-24 17:00:00',
 status = '課程已取消'
-where user_id = (select id from "USER" where email = 'wXlTq@hexschooltest.io')
+where user_id = (select id from "USER" where email = 'wXlTq@hexschooltest.io');
 
 
 
