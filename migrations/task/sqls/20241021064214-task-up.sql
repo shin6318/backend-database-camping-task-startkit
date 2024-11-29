@@ -276,7 +276,7 @@ select user_id, count(*) as total
 from "COURSE_BOOKING"
 where user_id = (select id from "USER" where email = 'wXlTq@hexschooltest.io')
 and status = '上課中'
-group by user_i;
+group by user_id;
 
 
 
